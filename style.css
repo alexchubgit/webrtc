@@ -1,0 +1,17 @@
+.video-container {
+    width: 900px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.local-video {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background-color: brown;
+}
+.remote-video {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+}

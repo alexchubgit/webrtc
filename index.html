@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; connect-src 'self';font-src 'self'; img-src 'self' data: https:; style-src 'self' ; script-src 'self'" />
+    <link rel="shortcut icon" href="/images/cam4.jpg" type="image/jpeg">
+    <title>WebRTC chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/node_modules/socket.io-client/dist/socket.io.js" defer></script>
+    <script src="client.js" defer></script>
+</head>
+
+<body>
+    <h2>WebRTC chat</h2>
+    <div class="video-container">
+        <video autoplay class="remote-video" id="remote-video"></video>
+        <video autoplay muted class="local-video" id="local-video"></video>
+    </div>
+    <div class="panel">
+        <label>Enter the number of the room</label>
+        <input id="room-input" type="text" />
+
+        <button id="connect-button">Connect</button>
+        <button id="disconnect-button">Disconnect</button>
+        <button id="stop-video">Stop Video</button>
+        <button id="stop-audio">Stop Audio</button>
+    </div>
+</body>
+
+</html>

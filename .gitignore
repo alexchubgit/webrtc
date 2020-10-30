@@ -1,0 +1,5 @@
+/node_modules
+/docs
+/keys
+/images
+package-lock.json
